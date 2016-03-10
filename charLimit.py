@@ -1,6 +1,6 @@
 listoffinal = []
 
-f = open("input.txt.txt", "r+")
+f = open("input", "r+")
 
 repeatTime = 0
 
@@ -36,11 +36,3 @@ while repeatTime < numberoflines:
 		listoffinal.append(listofcharacters[value])
 		value = value + 1
 	repeatTime = repeatTime + 1
-f = open("output.txt.txt", "r+")
-f.seek(0)
-f.truncate()
-placeValue = 0
-for i in listoffinal:
-	currentValue = listoffinal[placeValue]
-	f.writelines(currentValue)
-	placeValue = placeValue + 1
